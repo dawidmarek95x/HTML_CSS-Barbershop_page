@@ -1,0 +1,205 @@
+:root {
+    --mainFont: font-family: 'Open Sans', sans-serif;
+    --secondaryFont: font-family: 'Raleway', sans-serif;
+    --mainColor-darkTheme: #ffffff;
+    --secondaryColor-darkTheme: #9da4bd;
+    --secondaryColor-darkTheme-opacity: #9da4bd99;
+    --mainColor-lightTheme: #303030;
+    --secondaryColor-lightTheme: #555555;
+    --mainColor-effect: #ff6c00;
+}
+
+body {
+    font-family: var(--mainFont)
+}
+
+/* ===== COMPONENTS ===== */
+.address {
+    font-style: normal;
+}
+
+.modal-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    /* color: #FFFFFF */
+}
+
+.social-links__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.2em;
+    color: var(--mainColor-lightTheme)
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+    color: var(--mainColor-effect)
+}
+
+.undertitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.undertitle-light-theme,
+.secondary-header-light-theme {
+    color: var(--mainColor-lightTheme);
+}
+
+.undertitle-dark-theme {
+    color: var(--secondaryColor-darkTheme-opacity);
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+}
+
+.description-light-theme {
+    color: var(--secondaryColor-lightTheme);
+}
+
+.description-dark-theme {
+    color: var(--secondaryColor-darkTheme);
+}
+
+.secondary-header {
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+}
+
+.secondary-header-dark-theme {
+    color: var(--mainColor-darkTheme);
+}
+/* ===== END COMPONENTS ===== */
+
+/* ===== HEADER ===== */
+.navigation-list-link,
+.address-phone-number {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.1em;
+    /* color: #FFFFFF */
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-phone-number:hover,
+.address-phone-number:focus {
+    color: var(--mainColor-effect);
+}
+/* ===== END HEADER ===== */
+
+/* ===== HERO ===== */
+.main-header {
+    font-family: var(--secondaryFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.181;
+    letter-spacing: 0.05em;
+    /* color: #FFFFFF; */
+}
+/* ===== END HERO ===== */
+
+/* ===== ABOUT US ===== */
+.about__right-side-description {
+    font-size: 14px;
+    line-height: 1.857;
+    letter-spacing: 0.02em; 
+    color: var(--secondaryColor-lightTheme)
+}
+/* ===== END ABOUT US ===== */
+
+/* ===== SERVICES AND PRICES ===== */
+.services-list-item-name,
+.services-list-item-price {
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: var(--secondaryColor-darkTheme)
+}
+
+.services-list-item-price {
+    text-align: right;
+}
+/* ===== END SERVICES AND PRICES ===== */
+
+/* ===== WHY US ===== */
+.why-us__list-counter {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.357;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--mainColor-lightTheme);
+}
+
+.why-us__list-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    text-align: center;
+    color: var(--mainColor-lightTheme);
+}
+/* ===== END WHY US ===== */
+
+/* ===== OUR BARBERIES ===== */
+.our-barberies__list-name {
+    font-size: 18px;
+    line-height: 1.389;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--mainColor-lightTheme);
+}
+
+.our_barberies__list-job {
+    font-size: 14px;
+    line-height: 1.357;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--mainColor-effect);
+}
+/* ===== END OUR BARBERIES ===== */
+
+/* ===== PORTFOLIO ===== */
+.portfolio-header {
+    display: none;
+}
+/* ===== END PORTFOLIO ===== */
+
+/* ===== CONTACTS ===== */
+.address__list-link,
+.contacts-hours {
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: var(--secondaryColor-darkTheme);
+}
+
+.contacts__info .undertitle {
+    color: var(--mainColor-darkTheme);
+}
+/* ===== END CONTACTS ===== */
+
+/* ===== FOOTER ===== */
+.footer__copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.2em;
+    color: var(--secondaryColor-darkTheme);
+}
+/* ===== END FOOTER ===== */
