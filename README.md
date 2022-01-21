@@ -1,2 +1,2 @@
 # barbershop-training-page
- Praktyka HTML & CSS - strona BarberShop
+ HTML & CSS Practice - BarberShop Page
