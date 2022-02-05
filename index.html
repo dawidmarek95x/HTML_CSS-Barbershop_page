@@ -17,12 +17,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="navigation-logo" href="#">
+          <a class="navigation-logo animate__heartBeat" href="#">
             <svg class="logo-icon" width="69" height="56">
               <use href="images/sprite.svg#icon-logo"></use>
             </svg>
@@ -47,13 +49,13 @@
             >+48 111 111 111</a
           >
         </address>
-        <button class="modal-btn modal-btn-dark-theme" type="button">REJESTRACJA ONLINE</button>
+        <button class="modal-btn modal-btn-dark-theme" type="button" data-modal-open>REJESTRACJA ONLINE</button>
       </div>
     </header>
 
     <main class="main">
       <!-- HERO -->
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
           <div class="hero__left-side">
             <ul class="social-links list-st-none">
@@ -112,11 +114,11 @@
             <p class="about__right-side-description">
               Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w
               poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
-              już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
+              już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
               Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
               wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
             </p>
-            <button class="modal-btn modal-btn-light-theme" type="button">REJESTRACJA ONLINE</button>
+            <button class="modal-btn modal-btn-light-theme" type="button" data-modal-open>REJESTRACJA ONLINE</button>
           </div>
         </div>
       </section>
@@ -130,41 +132,49 @@
             <ul class="services-list list-st-none">
               <li class="services-list-item">
                 <span class="services-list-item-name">Męskie strzyżenie</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 100 zł.</span>
               </li>
               <li class="services-list-item">
                 <span class="services-list-item-name">Strzyżenie brody</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 75 zł.</span>
               </li>
               <li class="services-list-item">
                 <span class="services-list-item-name">Strzyżenie wąsów</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 50 zł.</span>
               </li>
               <li class="services-list-item">
                 <span class="services-list-item-name">Golenie brzytwą</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 75 zł.</span>
               </li>
             </ul>
             <ul class="services-list list-st-none">
               <li class="services-list-item">
                 <span class="services-list-item-name">Strzyżenie jedna długość</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 50 zł.</span>
               </li>
               <li class="services-list-item">
                 <span class="services-list-item-name">Strzyżenie maszynką</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 75 zł.</span>
               </li>
               <li class="services-list-item">
                 <span class="services-list-item-name">Strzyżenie chłopca (do 12 lat)</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 80 zł.</span>
               </li>
               <li class="services-list-item">
                 <span class="services-list-item-name">Repigmentacja włosów</span>
+                <span class="services-line"></span>
                 <span class="services-list-item-price">od 100 zł.</span>
               </li>
             </ul>
           </div>
-          <button class="modal-btn modal-btn-dark-theme" type="button">REJESTRACJA ONLINE</button>
+          <button class="modal-btn modal-btn-dark-theme" type="button" data-modal-open>REJESTRACJA ONLINE</button>
         </div>
       </section>
 
@@ -438,5 +448,17 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-icon">
+            <use href="images/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
