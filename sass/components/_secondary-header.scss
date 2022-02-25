@@ -1,0 +1,15 @@
+.secondary-header {
+  font-family: var(--secondaryFont);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+}
+
+.secondary-header-light-theme {
+  color: var(--colorMainLightTheme);
+}
+
+.secondary-header-dark-theme {
+  color: var(--colorMainDarkTheme);
+}

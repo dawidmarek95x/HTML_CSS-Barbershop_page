@@ -1,0 +1,55 @@
+:root {
+  --mainFont: "Open Sans", sans-serif;
+  --secondaryFont: "Raleway", sans-serif;
+  --colorMainDarkTheme: #ffffff;
+  --colorSecondaryDarkTheme: #9da4bd;
+  --colorSecondaryDarkTheme--opacity: #9da4bd99;
+  --colorMainLightTheme: #303030;
+  --colorSecondaryLightTheme: #555555;
+  --colorAccent: #ff6c00;
+  --colorContactsPlaceholder: #9DA4BD66;
+  --colorBackdropText: #212121;
+  --colorBackdropBorder: #21212133;
+  --colorBackdropPlaceholder: #75757580;
+  --bgColorServices: #111319;
+  --bgColorContacts: #191c26;
+}
+
+body {
+  font-family: var(--mainFont);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list-st-none {
+  list-style: none;
+}
+
+.link-dec-none {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}

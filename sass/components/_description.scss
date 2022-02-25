@@ -1,0 +1,14 @@
+.description {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+
+.description-light-theme {
+  color: var(--colorSecondaryLightTheme);
+}
+
+.description-dark-theme {
+  color: var(--colorSecondaryDarkTheme);
+}

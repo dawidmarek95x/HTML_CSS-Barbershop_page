@@ -1,0 +1,27 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--colorMainDarkTheme);
+  border-radius: 50%;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  fill: var(--colorAccent);
+  background-color: #000000;
+  transition: all 250ms linear;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}

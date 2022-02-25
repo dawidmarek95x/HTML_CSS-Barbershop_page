@@ -1,0 +1,28 @@
+.modal-btn {
+  width: 164px;
+  border: 1px solid var(--colorAccent);
+  border-radius: 25px;
+  padding: 12px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--colorAccent);
+  color: #fff;
+}
+
+.modal-btn-dark-theme {
+  color: var(--colorMainDarkTheme);
+}
+
+.modal-btn-light-theme {
+  color: var(--colorMainLightTheme);
+}
