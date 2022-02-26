@@ -1,12 +1,30 @@
+@import './utils/variables';
+
 @import './base/common';
 @import './base/container';
 @import './base/section';
 
 @import './utils/visually-hidden';
+@import './components/backdrop';
+@import './components/modal';
 
 @import './components/modal-btn';
 @import './components/social-links';
+@import './components/main-header';
 @import './components/undertitle';
 @import './components/secondary-header';
 @import './components/description';
 @import './components/social-list';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/services';
+@import './layout/why-us';
+@import './layout/our-barberies';
+@import './layout/portfolio';
+@import './layout/contacts';
+@import './layout/contacts-form';
+@import './layout/contacts-info';
+@import './layout/contacts-address';
+@import './layout/footer';

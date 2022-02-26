@@ -1,0 +1,12 @@
+.contacts {
+  display: flex;
+  background-color: var(--bgColorContacts);
+}
+
+.contacts > .container {
+  display: flex;
+}
+
+.contacts .secondary-header {
+  margin-bottom: 40px;
+}

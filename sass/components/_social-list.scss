@@ -12,13 +12,13 @@
   height: 44px;
   background-color: var(--colorMainDarkTheme);
   border-radius: 50%;
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  fill: var(--colorAccent);
-  background-color: #000000;
-  transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    fill: var(--colorAccent);
+    background-color: #000000;
+    transition: all 250ms linear;
+  }
 }
 
 .social-icon {

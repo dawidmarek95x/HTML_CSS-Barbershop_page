@@ -1,0 +1,39 @@
+.our-barberies {
+  background-color: #f7f7f7;
+}
+
+.our-barberies .secondary-header {
+  margin-bottom: 44px;
+}
+
+.our-barberies__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-barberies__list-photo {
+  margin-bottom: 30px;
+}
+
+.our-barberies__list-info {
+  width: 206px;
+  margin: 0 auto;
+}
+
+.our-barberies__list-name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.389;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--colorMainLightTheme);
+}
+
+.our_barberies__list-job {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--colorAccent);
+}

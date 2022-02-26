@@ -7,29 +7,29 @@
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+    background-color: var(--colorSecondaryDarkTheme--opacity);
+  }
 }
 
-.undertitle::before {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 60px;
-  margin-right: 20px;
-  background-color: var(--colorSecondaryDarkTheme--opacity);
-}
-
-.undertitle-light-theme {
+.undertitle--light-theme {
   color: var(--colorMainLightTheme);
+
+  &::before {
+    background-color: var(--colorMainLightTheme);
+  }
 }
 
-.undertitle-dark-theme {
+.undertitle--dark-theme {
   color: var(--colorSecondaryDarkTheme--opacity);
-}
 
-.undertitle-light-theme::before {
-  background-color: var(--colorMainLightTheme);
-}
-
-.undertitle-dark-theme::before {
-  background-color: var(--colorSecondaryDarkTheme--opacity);
+  &::before {
+    background-color: var(--colorSecondaryDarkTheme--opacity);
+  }
 }
