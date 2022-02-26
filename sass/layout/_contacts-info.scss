@@ -1,14 +1,14 @@
 .contacts__info {
   width: 50%;
   padding-left: 100px;
-}
 
-.contacts__info .undertitle {
-  color: var(--colorMainDarkTheme);
-}
-
-.contacts__info .address {
-  margin-bottom: 70px;
+  & .undertitle {
+    color: var(--colorMainDarkTheme);
+  }
+  
+  & .address {
+    margin-bottom: 70px;
+  }
 }
 
 .contacts__hours {

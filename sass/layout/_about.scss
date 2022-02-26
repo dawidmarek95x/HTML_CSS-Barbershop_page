@@ -1,30 +1,29 @@
-.about .container {
-  display: flex;
-  align-items: center;
+.about {
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+
+  & .description {
+    margin-bottom: 20px;
+  }
 }
 
 .about__img-list {
   display: flex;
 }
 
-.about__img-list-item:not(:last-child) {
+.about__img-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .about__right-side {
-  width: 600px;
-  padding-left: 64px;
+  padding-left: 65px;
+  padding-right: 35px;
 }
 
-.about .description {
-  margin-bottom: 20px;
-}
-
-.about__right-side-description {
+.about__description {
   margin-bottom: 40px;
-}
-
-.about__right-side-description {
   font-size: 14px;
   line-height: 1.857;
   letter-spacing: 0.02em;

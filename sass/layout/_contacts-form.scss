@@ -1,6 +1,5 @@
 .contacts-form__section {
   width: 50%;
-  padding-left: 55px;
 }
 
 .contacts-form {
@@ -21,6 +20,21 @@
   color: #fff;
   background-color: transparent;
   transition: all 250ms linear;
+
+  &:focus {
+    outline: none;
+    border-color: #fff;
+  }
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: var(--colorContactsPlaceholder);
+    transition: color 250ms linear;
+  }
+
+  &:focus::placeholder {
+    color: #fff;
+  }
 }
 
 .contacts-form__message {
@@ -35,24 +49,21 @@
   background-color: transparent;
   resize: none;
   transition: all 250ms linear;
-}
 
-.contacts-form__input:focus,
-.contacts-form__message:focus {
-  outline: none;
-  border-color: #fff;
-}
+  &:focus {
+    outline: none;
+    border-color: #fff;
+  }
 
-.contacts-form__input::placeholder,
-.contacts-form__message::placeholder {
-  text-transform: uppercase;
-  color: var(--colorContactsPlaceholder);
-  transition: color 250ms linear;
-}
+  &::placeholder {
+    text-transform: uppercase;
+    color: var(--colorContactsPlaceholder);
+    transition: color 250ms linear;
+  }
 
-.contacts-form__input:focus::placeholder,
-.contacts-form__message:focus::placeholder {
-  color: #fff;
+  &:focus::placeholder {
+    color: #fff;
+  }
 }
 
 .contacts-form__btn {
@@ -69,9 +80,9 @@
   color: var(--colorMainDarkTheme);
   background-color: transparent;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 
-.contacts-form__btn:hover,
-.contacts-form__btn:focus {
-  background-color: var(--colorAccent);
+  &:hover,
+  &:focus {
+    background-color: var(--colorAccent);
+  }
 }

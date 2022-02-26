@@ -1,8 +1,10 @@
-.portfolio .undertitle {
-  margin-bottom: 40px;
+.portfolio {
+  & .undertitle {
+    margin-bottom: 40px;
+  }
 }
 
-.portfolio-header {
+.portfolio__header {
   display: none;
 }
 

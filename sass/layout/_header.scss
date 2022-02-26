@@ -2,54 +2,33 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  & .container {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+  }
+
+  & .address {
+    margin-left: auto;
+    margin-right: 41px;
+  }
+
+  & .modal-btn {
+    margin-right: 15px;
+  }
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-}
-
-.navigation {
-  display: flex;
-}
-
-.navigation-logo {
-  margin-right: 71px;
-  animation: heartBeat 250ms;
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list-item:not(:last-child) {
-  margin-right: 41px;
-}
-
-.header .address {
-  margin-left: auto;
-  margin-right: 41px;
-}
-
-.navigation-list-link,
-.address-phone-number {
+.address__phone-number {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
   color: #ffffff;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.address-phone-number:hover,
-.address-phone-number:focus {
-  color: var(--colorAccent);
-}
-
-.header .modal-btn {
-  margin-right: 15px;
+  &:hover,
+  &:focus {
+    color: var(--colorAccent);
+  }
 }

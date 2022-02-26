@@ -1,18 +1,24 @@
-.hero .container {
-  display: flex;
+.hero {
+  & .container {
+    display: flex;
+  }
+  
+  & .description {
+    width: 363px;
+  }
 }
 
 .hero__left-side {
   display: flex;
   align-items: center;
-}
 
-.hero__left-side .social-links {
-  justify-content: flex-end;
-  width: 100px;
-  padding-bottom: 40px;
-  padding-right: 82px;
-  transform: rotate(270deg);
+  & .social-links {
+    justify-content: flex-end;
+    width: 100px;
+    padding-bottom: 40px;
+    padding-right: 82px;
+    transform: rotate(270deg);
+  }
 }
 
 .hero__right-side {
@@ -28,8 +34,4 @@
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.hero .description {
-  width: 363px;
 }

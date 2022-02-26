@@ -1,9 +1,9 @@
 .our-barberies {
   background-color: #f7f7f7;
-}
 
-.our-barberies .secondary-header {
-  margin-bottom: 44px;
+  & .secondary-header {
+    margin-bottom: 44px;
+  }
 }
 
 .our-barberies__list {
@@ -11,16 +11,16 @@
   justify-content: space-between;
 }
 
-.our-barberies__list-photo {
+.our-barberies__photo {
   margin-bottom: 30px;
 }
 
-.our-barberies__list-info {
+.our-barberies__info {
   width: 206px;
   margin: 0 auto;
 }
 
-.our-barberies__list-name {
+.our-barberies__name {
   margin-bottom: 8px;
   font-size: 18px;
   line-height: 1.389;
@@ -29,7 +29,7 @@
   color: var(--colorMainLightTheme);
 }
 
-.our_barberies__list-job {
+.our_barberies__job {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.357;
