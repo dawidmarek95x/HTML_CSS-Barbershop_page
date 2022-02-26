@@ -14,21 +14,21 @@
   height: 24px;
   margin-bottom: 44px;
   border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-bottom: 1px solid #9da4bd66;
   font-size: 11px;
   font-weight: 600;
   color: #fff;
   background-color: transparent;
+  outline: none;
   transition: all 250ms linear;
 
   &:focus {
-    outline: none;
     border-color: #fff;
   }
 
   &::placeholder {
     text-transform: uppercase;
-    color: var(--colorContactsPlaceholder);
+    color: $colorContactsPlaceholder;
     transition: color 250ms linear;
   }
 
@@ -42,7 +42,7 @@
   height: 76px;
   margin-bottom: 44px;
   border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-bottom: 1px solid #9da4bd66;
   font-size: 11px;
   font-weight: 600;
   color: #fff;
@@ -57,7 +57,7 @@
 
   &::placeholder {
     text-transform: uppercase;
-    color: var(--colorContactsPlaceholder);
+    color: $colorContactsPlaceholder;
     transition: color 250ms linear;
   }
 
@@ -68,7 +68,7 @@
 
 .contacts-form__btn {
   min-width: 160px;
-  border: 1px solid var(--colorAccent);
+  border: 1px solid $colorAccent;
   border-radius: 25px;
   padding: 12px 10px;
   font-weight: 600;
@@ -77,12 +77,12 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-  color: var(--colorMainDarkTheme);
+  color: $colorMainDarkTheme;
   background-color: transparent;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
   &:hover,
   &:focus {
-    background-color: var(--colorAccent);
+    background-color: $colorAccent;
   }
 }

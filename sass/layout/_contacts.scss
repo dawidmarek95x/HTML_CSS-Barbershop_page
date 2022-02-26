@@ -1,6 +1,6 @@
 .contacts {
   display: flex;
-  background-color: var(--bgColorContacts);
+  background-color: $bgColorContacts;
 
   & > .container {
     display: flex;

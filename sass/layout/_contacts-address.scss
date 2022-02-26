@@ -22,12 +22,12 @@
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: $colorSecondaryDarkTheme;
 
   &:hover,
   &:focus {
-    color: var(--colorMainDarkTheme);
-    text-decoration: underline var(--colorAccent);
+    color: $colorMainDarkTheme;
+    text-decoration: underline $colorAccent;
   }
 }
 

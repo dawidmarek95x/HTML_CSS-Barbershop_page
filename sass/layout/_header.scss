@@ -24,11 +24,11 @@
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: $colorMainDarkTheme;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
   &:hover,
   &:focus {
-    color: var(--colorAccent);
+    color: $colorAccent;
   }
 }

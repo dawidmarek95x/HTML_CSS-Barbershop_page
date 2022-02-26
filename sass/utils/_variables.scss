@@ -1,16 +1,19 @@
-:root {
-  --mainFont: "Open Sans", sans-serif;
-  --secondaryFont: "Raleway", sans-serif;
-  --colorMainDarkTheme: #ffffff;
-  --colorSecondaryDarkTheme: #9da4bd;
-  --colorSecondaryDarkTheme--opacity: #9da4bd99;
-  --colorMainLightTheme: #303030;
-  --colorSecondaryLightTheme: #555555;
-  --colorAccent: #ff6c00;
-  --colorContactsPlaceholder: #9DA4BD66;
-  --colorBackdropText: #212121;
-  --colorBackdropBorder: #21212133;
-  --colorBackdropPlaceholder: #75757580;
-  --bgColorServices: #111319;
-  --bgColorContacts: #191c26;
-}
+$mainFont: "Open Sans", sans-serif;
+$secondaryFont: "Raleway", sans-serif;
+$colorMainDarkTheme: #ffffff;
+$colorSecondaryDarkTheme: #9da4bd;
+$colorSecondaryDarkTheme--opacity: #9da4bd99;
+$colorMainLightTheme: #303030;
+$colorSecondaryLightTheme: #555555;
+$colorAccent: #ff6c00;
+$colorContactsPlaceholder: #9da4bd66;
+$colorBackdropText: #212121;
+$colorBackdropBorder: #21212133;
+$colorBackdropPlaceholder: #75757580;
+$bgColorAccentLight: #f7f7f7;
+$bgColorServices: #111319;
+$bgColorContacts: #191c26;
+$bgColorBackdrop: #00000033;
+$bgColorModal: #fff;
+$bgColorIcons: #000;
+$mainColorIcons: #000;

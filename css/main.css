@@ -1,22 +1,5 @@
-:root {
-  --mainFont: "Open Sans", sans-serif;
-  --secondaryFont: "Raleway", sans-serif;
-  --colorMainDarkTheme: #ffffff;
-  --colorSecondaryDarkTheme: #9da4bd;
-  --colorSecondaryDarkTheme--opacity: #9da4bd99;
-  --colorMainLightTheme: #303030;
-  --colorSecondaryLightTheme: #555555;
-  --colorAccent: #ff6c00;
-  --colorContactsPlaceholder: #9DA4BD66;
-  --colorBackdropText: #212121;
-  --colorBackdropBorder: #21212133;
-  --colorBackdropPlaceholder: #75757580;
-  --bgColorServices: #111319;
-  --bgColorContacts: #191c26;
-}
-
 body {
-  font-family: var(--mainFont);
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -78,7 +61,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #00000033;
   transform: scale(1);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
@@ -131,7 +114,7 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--colorBackdropText);
+  color: #212121;
 }
 
 .modal__form {
@@ -152,7 +135,7 @@ img {
 .modal__form-input {
   width: 100%;
   height: 40px;
-  border: 1px solid var(--colorBackdropBorder);
+  border: 1px solid #21212133;
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color 250ms linear;
@@ -160,11 +143,11 @@ img {
 
 .modal__form-input:focus {
   outline: none;
-  border-color: var(--colorAccent);
+  border-color: #ff6c00;
 }
 
 .modal__form-input:focus + .modal__form-icon {
-  fill: var(--colorAccent);
+  fill: #ff6c00;
 }
 
 .modal__form-icon {
@@ -173,7 +156,7 @@ img {
   left: 12px;
   width: 18px;
   height: 18px;
-  fill: var(--colorBackdropText);
+  fill: #212121;
   transition: fill 250ms linear;
 }
 
@@ -181,7 +164,7 @@ img {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  border: 1px solid var(--colorBackdropBorder);
+  border: 1px solid #21212133;
   border-radius: 4px;
   resize: none;
   transition: border-color 250ms linear;
@@ -189,11 +172,11 @@ img {
 
 .modal__form-message:focus {
   outline: none;
-  border-color: var(--colorAccent);
+  border-color: #ff6c00;
 }
 
 .modal__form-message::placeholder {
-  color: var(--colorBackdropPlaceholder);
+  color: #75757580;
 }
 
 .modal-form__policy--wrapper {
@@ -211,13 +194,13 @@ img {
   content: "";
   width: 16px;
   height: 16px;
-  border: 1px solid var(--colorBackdropText);
+  border: 1px solid #212121;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form-policy:checked + .modal__form-policy-text::before {
   border: none;
-  background-color: var(--colorAccent);
+  background-color: #ff6c00;
   background-image: url(../images/backdrop/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -228,22 +211,22 @@ img {
   width: 200px;
   padding: 12px 20px;
   margin: 0 auto;
-  border: 1px solid var(--colorAccent);
+  border: 1px solid #ff6c00;
   border-radius: 25px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--colorMainLightTheme);
+  color: #303030;
   background-color: transparent;
   cursor: pointer;
   transition: all 250ms linear;
 }
 
 .modal__form-btn:hover, .modal__form-btn:focus {
-  color: var(--colorMainDarkTheme);
-  background-color: var(--colorAccent);
+  color: #ffffff;
+  background-color: #ff6c00;
 }
 
 .navigation {
@@ -274,12 +257,12 @@ img {
 }
 
 .navigation__link:hover, .navigation__link:focus {
-  color: var(--colorAccent);
+  color: #ff6c00;
 }
 
 .modal-btn {
   width: 164px;
-  border: 1px solid var(--colorAccent);
+  border: 1px solid #ff6c00;
   border-radius: 25px;
   padding: 12px 10px;
   font-weight: 600;
@@ -293,16 +276,16 @@ img {
 }
 
 .modal-btn:hover, .modal-btn:focus {
-  background-color: var(--colorAccent);
-  color: #fff;
+  background-color: #ff6c00;
+  color: #ffffff;
 }
 
 .modal-btn--dark-theme {
-  color: var(--colorMainDarkTheme);
+  color: #ffffff;
 }
 
 .modal-btn--light-theme {
-  color: var(--colorMainLightTheme);
+  color: #303030;
 }
 
 .address {
@@ -328,7 +311,7 @@ img {
   height: 1px;
   width: 60px;
   margin-right: 40px;
-  background-color: var(--colorMainLightTheme);
+  background-color: #303030;
 }
 
 .social-links__link {
@@ -336,16 +319,16 @@ img {
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.2em;
-  color: var(--colorMainLightTheme);
+  color: #303030;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links__link:hover, .social-links__link:focus {
-  color: var(--colorAccent);
+  color: #ff6c00;
 }
 
 .main-header {
-  font-family: var(--secondaryFont);
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
@@ -371,27 +354,27 @@ img {
   height: 1px;
   width: 60px;
   margin-right: 20px;
-  background-color: var(--colorSecondaryDarkTheme--opacity);
+  background-color: #9da4bd99;
 }
 
 .undertitle--light-theme {
-  color: var(--colorMainLightTheme);
+  color: #303030;
 }
 
 .undertitle--light-theme::before {
-  background-color: var(--colorMainLightTheme);
+  background-color: #303030;
 }
 
 .undertitle--dark-theme {
-  color: var(--colorSecondaryDarkTheme--opacity);
+  color: #9da4bd99;
 }
 
 .undertitle--dark-theme::before {
-  background-color: var(--colorSecondaryDarkTheme--opacity);
+  background-color: #9da4bd99;
 }
 
 .secondary-header {
-  font-family: var(--secondaryFont);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.167;
@@ -399,11 +382,11 @@ img {
 }
 
 .secondary-header--light-theme {
-  color: var(--colorMainLightTheme);
+  color: #303030;
 }
 
 .secondary-header--dark-theme {
-  color: var(--colorMainDarkTheme);
+  color: #ffffff;
 }
 
 .description {
@@ -414,11 +397,11 @@ img {
 }
 
 .description-light-theme {
-  color: var(--colorSecondaryLightTheme);
+  color: #555555;
 }
 
 .description-dark-theme {
-  color: var(--colorSecondaryDarkTheme);
+  color: #9da4bd;
 }
 
 .social-list {
@@ -433,14 +416,14 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--colorMainDarkTheme);
+  background-color: #ffffff;
   border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list__link:hover, .social-list__link:focus {
-  fill: var(--colorAccent);
-  background-color: #000000;
-  transition: all 250ms linear;
+  fill: #ff6c00;
+  background-color: #000;
 }
 
 .social-icon {
@@ -479,7 +462,7 @@ img {
 }
 
 .address__phone-number:hover, .address__phone-number:focus {
-  color: var(--colorAccent);
+  color: #ff6c00;
 }
 
 .hero .container {
@@ -541,11 +524,11 @@ img {
   font-size: 14px;
   line-height: 1.857;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryLightTheme);
+  color: #555555;
 }
 
 .services {
-  background-color: var(--bgColorServices);
+  background-color: #111319;
   background-image: url(../images/services-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -592,14 +575,14 @@ img {
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: #9da4bd;
 }
 
 .services__line {
   display: block;
   flex-grow: 1;
   height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
+  background-color: #9da4bd1f;
   margin: 0 6px;
 }
 
@@ -607,7 +590,7 @@ img {
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: #9da4bd;
   text-align: right;
 }
 
@@ -652,7 +635,7 @@ img {
   line-height: 1.357;
   text-align: center;
   letter-spacing: 0.05em;
-  color: var(--colorMainLightTheme);
+  color: #303030;
 }
 
 .why-us__counter::after {
@@ -671,7 +654,7 @@ img {
   font-size: 11px;
   line-height: 1.364;
   text-align: center;
-  color: var(--colorMainLightTheme);
+  color: #303030;
 }
 
 .why-us__right-side {
@@ -710,7 +693,7 @@ img {
   line-height: 1.389;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--colorMainLightTheme);
+  color: #303030;
 }
 
 .our_barberies__job {
@@ -719,7 +702,7 @@ img {
   line-height: 1.357;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--colorAccent);
+  color: #ff6c00;
 }
 
 .portfolio .undertitle {
@@ -737,7 +720,7 @@ img {
 
 .contacts {
   display: flex;
-  background-color: var(--bgColorContacts);
+  background-color: #191c26;
 }
 
 .contacts > .container {
@@ -764,22 +747,22 @@ img {
   height: 24px;
   margin-bottom: 44px;
   border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-bottom: 1px solid #9da4bd66;
   font-size: 11px;
   font-weight: 600;
   color: #fff;
   background-color: transparent;
+  outline: none;
   transition: all 250ms linear;
 }
 
 .contacts-form__input:focus {
-  outline: none;
   border-color: #fff;
 }
 
 .contacts-form__input::placeholder {
   text-transform: uppercase;
-  color: var(--colorContactsPlaceholder);
+  color: #9da4bd66;
   transition: color 250ms linear;
 }
 
@@ -792,7 +775,7 @@ img {
   height: 76px;
   margin-bottom: 44px;
   border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-bottom: 1px solid #9da4bd66;
   font-size: 11px;
   font-weight: 600;
   color: #fff;
@@ -808,7 +791,7 @@ img {
 
 .contacts-form__message::placeholder {
   text-transform: uppercase;
-  color: var(--colorContactsPlaceholder);
+  color: #9da4bd66;
   transition: color 250ms linear;
 }
 
@@ -818,7 +801,7 @@ img {
 
 .contacts-form__btn {
   min-width: 160px;
-  border: 1px solid var(--colorAccent);
+  border: 1px solid #ff6c00;
   border-radius: 25px;
   padding: 12px 10px;
   font-weight: 600;
@@ -827,13 +810,13 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-  color: var(--colorMainDarkTheme);
+  color: #ffffff;
   background-color: transparent;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .contacts-form__btn:hover, .contacts-form__btn:focus {
-  background-color: var(--colorAccent);
+  background-color: #ff6c00;
 }
 
 .contacts__info {
@@ -842,7 +825,7 @@ img {
 }
 
 .contacts__info .undertitle {
-  color: var(--colorMainDarkTheme);
+  color: #ffffff;
 }
 
 .contacts__info .address {
@@ -853,7 +836,7 @@ img {
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: #9da4bd;
 }
 
 .address__item:not(:first-child) {
@@ -878,12 +861,12 @@ img {
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: #9da4bd;
 }
 
 .address__link:hover, .address__link:focus {
-  color: var(--colorMainDarkTheme);
-  text-decoration: underline var(--colorAccent);
+  color: #ffffff;
+  text-decoration: underline #ff6c00;
 }
 
 .address__icon {
@@ -913,6 +896,6 @@ img {
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.2em;
-  color: var(--colorSecondaryDarkTheme);
+  color: #9da4bd;
 }
 /*# sourceMappingURL=main.css.map */

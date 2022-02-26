@@ -1,6 +1,6 @@
 .modal-btn {
   width: 164px;
-  border: 1px solid var(--colorAccent);
+  border: 1px solid $colorAccent;
   border-radius: 25px;
   padding: 12px 10px;
   font-weight: 600;
@@ -14,15 +14,15 @@
 
   &:hover,
   &:focus {
-    background-color: var(--colorAccent);
-    color: #fff;
+    background-color: $colorAccent;
+    color: $colorMainDarkTheme;
   }
 }
 
 .modal-btn--dark-theme {
-  color: var(--colorMainDarkTheme);
+  color: $colorMainDarkTheme;
 }
 
 .modal-btn--light-theme {
-  color: var(--colorMainLightTheme);
+  color: $colorMainLightTheme;
 }

@@ -6,9 +6,9 @@
 }
 
 .description-light-theme {
-  color: var(--colorSecondaryLightTheme);
+  color: $colorSecondaryLightTheme;
 }
 
 .description-dark-theme {
-  color: var(--colorSecondaryDarkTheme);
+  color: $colorSecondaryDarkTheme;
 }

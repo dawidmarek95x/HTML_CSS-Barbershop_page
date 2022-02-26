@@ -11,7 +11,6 @@
 }
 
 .why-us__list {
-
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -21,7 +20,7 @@
   width: 170px;
   min-height: 133px;
   padding: 20px 24px;
-  background-color: #f7f7f7;
+  background-color: $bgColorAccentLight;
 
   &:nth-child(odd) {
     margin-right: 30px;
@@ -42,7 +41,7 @@
   line-height: 1.357;
   text-align: center;
   letter-spacing: 0.05em;
-  color: var(--colorMainLightTheme);
+  color: $colorMainLightTheme;
 
   &::after {
     position: absolute;
@@ -52,7 +51,7 @@
     background-image: url(../images/plus.svg);
     width: 9px;
     height: 9px;
-    fill: #ff6c00;
+    fill: $colorAccent;
   }
 }
 
@@ -61,7 +60,7 @@
   font-size: 11px;
   line-height: 1.364;
   text-align: center;
-  color: var(--colorMainLightTheme);
+  color: $colorMainLightTheme;
 }
 
 .why-us__right-side {

@@ -1,5 +1,5 @@
 .services {
-  background-color: var(--bgColorServices);
+  background-color: $bgColorServices;
   background-image: url(../images/services-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,14 +54,14 @@
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: $colorSecondaryDarkTheme;
 }
 
 .services__line {
   display: block;
   flex-grow: 1;
   height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
+  background-color: #9da4bd1f;
   margin: 0 6px;
 }
 
@@ -69,6 +69,6 @@
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: $colorSecondaryDarkTheme;
   text-align: right;
 }

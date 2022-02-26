@@ -14,22 +14,22 @@
     height: 1px;
     width: 60px;
     margin-right: 20px;
-    background-color: var(--colorSecondaryDarkTheme--opacity);
+    background-color: $colorSecondaryDarkTheme--opacity;
   }
 }
 
 .undertitle--light-theme {
-  color: var(--colorMainLightTheme);
+  color: $colorMainLightTheme;
 
   &::before {
-    background-color: var(--colorMainLightTheme);
+    background-color: $colorMainLightTheme;
   }
 }
 
 .undertitle--dark-theme {
-  color: var(--colorSecondaryDarkTheme--opacity);
+  color: $colorSecondaryDarkTheme--opacity;
 
   &::before {
-    background-color: var(--colorSecondaryDarkTheme--opacity);
+    background-color: $colorSecondaryDarkTheme--opacity;
   }
 }

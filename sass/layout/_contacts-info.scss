@@ -3,7 +3,7 @@
   padding-left: 100px;
 
   & .undertitle {
-    color: var(--colorMainDarkTheme);
+    color: $colorMainDarkTheme;
   }
   
   & .address {
@@ -15,5 +15,5 @@
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--colorSecondaryDarkTheme);
+  color: $colorSecondaryDarkTheme;
 }
