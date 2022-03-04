@@ -7,6 +7,7 @@
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: $colorSecondaryDarkTheme--opacity;
 
   &::before {
     content: "";

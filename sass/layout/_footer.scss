@@ -1,12 +1,14 @@
+.footer {
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .footer--wrapper {
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-.footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .footer__copy {
