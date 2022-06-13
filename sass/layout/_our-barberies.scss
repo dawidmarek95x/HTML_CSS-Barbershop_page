@@ -4,36 +4,58 @@
   & .secondary-header {
     margin-bottom: 44px;
   }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+  
+  &__photo {
+    margin-bottom: 30px;
+  }
+  
+  &__info {
+    width: 206px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  &__name {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.362;
+    letter-spacing: 0.02em;
+    color: $colorMainLightTheme;
+  }
+
+  &__job {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.357;
+    letter-spacing: 0.02em;
+    color: $colorAccent;
+  }
 }
 
-.our-barberies__list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-barberies {
+    & .container {
+      padding: 0 159px;
+    }
+  }
 }
 
-.our-barberies__photo {
-  margin-bottom: 30px;
-}
+@media screen and (min-width: 1200px) {
+  .our-barberies {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
 
-.our-barberies__info {
-  width: 206px;
-  margin: 0 auto;
-}
-
-.our-barberies__name {
-  margin-bottom: 8px;
-  font-size: 18px;
-  line-height: 1.389;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: $colorMainLightTheme;
-}
-
-.our_barberies__job {
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.357;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: $colorAccent;
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }

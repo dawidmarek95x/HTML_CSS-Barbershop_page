@@ -803,13 +803,13 @@ img {
 }
 
 .why-us .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
 }
 
-.why-us__left-side {
-  width: 470px;
-  flex-shrink: 0;
-  padding-left: 100px;
+.why-us__advantages {
+  grid-row: 2/3;
 }
 
 .why-us__list {
@@ -819,9 +819,9 @@ img {
 }
 
 .why-us__item {
-  width: 170px;
+  width: 193px;
   min-height: 133px;
-  padding: 20px 24px;
+  padding: 20px 32px;
   background-color: #f7f7f7;
 }
 
@@ -830,7 +830,7 @@ img {
 }
 
 .why-us__item:nth-child(even) {
-  margin-top: 38px;
+  margin-top: 30px;
 }
 
 .why-us__counter {
@@ -865,12 +865,52 @@ img {
   color: #303030;
 }
 
-.why-us__right-side {
-  padding-left: 130px;
+.why-us__info {
+  grid-row: 1/2;
+  margin-bottom: 44px;
 }
 
-.why-us__right-side .description {
-  width: 500px;
+.why-us__info .description {
+  font-size: 18px;
+  line-height: 1.667;
+}
+
+@media screen and (min-width: 768px) {
+  .why-us__advantages {
+    width: 450px;
+  }
+  .why-us__advantages {
+    margin-left: auto;
+  }
+  .why-us__item {
+    width: 210px;
+    padding: 20px 44px;
+  }
+  .why-us__info {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .why-us .container {
+    display: flex;
+  }
+  .why-us__advantages {
+    margin-left: 0;
+    padding-left: 100px;
+  }
+  .why-us__list {
+    width: 370px;
+  }
+  .why-us__item {
+    width: 170px;
+    padding: 20px 24px;
+  }
+  .why-us__info {
+    width: 500px;
+    margin-left: 130px;
+    margin-bottom: 0;
+  }
 }
 
 .our-barberies {
@@ -881,9 +921,8 @@ img {
   margin-bottom: 44px;
 }
 
-.our-barberies__list {
-  display: flex;
-  justify-content: space-between;
+.our-barberies__item:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 .our-barberies__photo {
@@ -893,24 +932,40 @@ img {
 .our-barberies__info {
   width: 206px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .our-barberies__name {
   margin-bottom: 8px;
   font-size: 18px;
-  line-height: 1.389;
-  text-align: center;
+  line-height: 1.362;
   letter-spacing: 0.02em;
   color: #303030;
 }
 
-.our_barberies__job {
+.our-barberies__job {
+  margin-top: 0;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.357;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ff6c00;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-barberies .container {
+    padding: 0 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-barberies__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .our-barberies__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio .undertitle {

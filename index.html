@@ -201,9 +201,9 @@
       </section>
 
       <!-- WHY US -->
-      <!-- <section class="why-us section">
+      <section class="why-us section">
         <div class="container">
-          <div class="why-us__left-side">
+          <div class="why-us__advantages">
             <ul class="why-us__list list--non-bulleted">
               <li class="why-us__item">
                 <p class="why-us__counter">600</p>
@@ -224,7 +224,7 @@
             </ul>
           </div>
   
-          <div class="why-us__right-side">
+          <div class="why-us__info">
             <p class="undertitle undertitle--light-theme">TRADYCYJNA SZKOŁA</p>
             <h2 class="secondary-header secondary-header--light-theme">Dlaczego klienci przychodzą do nas?</h2>
             <p class="description description-light-theme">
@@ -233,24 +233,31 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- OUR BARBERIES -->
-      <!-- <section class="our-barberies section">
+      <section class="our-barberies section">
         <div class="container">
           <p class="undertitle undertitle--light-theme">Dla prawdziwych mężczyzn</p>
           <h2 class="secondary-header secondary-header--light-theme">Nasi barberzy</h2>
           <ul class="our-barberies__list list--non-bulleted">
             <li class="our-barberies__item">
-              <img class="our-barberies__photo"
-                src="images/barbers/John Smith.jpg"
-                alt="Zdjęcie Johna Smitha"
-                width="370"
-                height="346"
-              />
+              <picture class="our-barberies__picture">
+                <source srcset="./images/barbers/photo-js-desktop.jpg 1x, ./images/barbers/photo-js-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" sizes="(min-width: 370px) 370px">
+                <source srcset="./images/barbers/photo-js-tablet.jpg 1x, ./images/barbers/photo-js-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" sizes="(min-width: 450px) 450px">
+                <source srcset="./images/barbers/photo-js-mobile.jpg 1x, ./images/barbers/photo-js-mobile@2x.jpg 2x"
+                media="(min-width: 480px)" sizes="(min-width: 418px) 418px">
+                <img
+                  class="our-barberies__photo"
+                  alt="Zdjęcie Johna Smitha"
+                  src="./images/barbers/photo-js-mobile.jpg"
+                />
+              </picture>
               <div class="our-barberies__info">
                 <h3 class="our-barberies__name">John Smith</h3>
-                <p class="our_barberies__job">Extreme Barber</p>
+                <p class="our-barberies__job">Extreme Barber</p>
                 <ul class="social-list list--non-bulleted">
                   <li class="social-list-item">
                     <a class="social-list__link" href="#">
@@ -288,15 +295,22 @@
               </div>
             </li>
             <li class="our-barberies__item">
-              <img class="our-barberies__photo"
-                src="images/barbers/Michele Doe.jpg"
-                alt="Zdjęcie Michela Doe"
-                width="370"
-                height="346"
-              />
+              <picture class="our-barberies__picture">
+                <source srcset="./images/barbers/photo-md-desktop.jpg 1x, ./images/barbers/photo-md-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" sizes="(min-width: 370px) 370px">
+                <source srcset="./images/barbers/photo-md-tablet.jpg 1x, ./images/barbers/photo-md-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" sizes="(min-width: 450px) 450px">
+                <source srcset="./images/barbers/photo-md-mobile.jpg 1x, ./images/barbers/photo-md-mobile@2x.jpg 2x"
+                media="(min-width: 480px)" sizes="(min-width: 418px) 418px">
+                <img
+                  class="our-barberies__photo"
+                  alt="Zdjęcie Michaela Doe"
+                  src="./images/barbers/photo-md-mobile.jpg"
+                />
+              </picture>
               <div class="our-barberies__info">
                 <h3 class="our-barberies__name">Michele Doe</h3>
-                <p class="our_barberies__job">Extreme Barber</p>
+                <p class="our-barberies__job">Extreme Barber</p>
                 <ul class="social-list list--non-bulleted">
                   <li class="social-list-item">
                     <a class="social-list__link" href="#">
@@ -334,15 +348,22 @@
               </div>
             </li>
             <li class="our-barberies__item">
-              <img class="our-barberies__photo"
-                src="images/barbers/Alan Black.jpg"
-                alt="Zdjęcie Alana Blacka"
-                width="370"
-                height="346"
-              />
+              <picture class="our-barberies__picture">
+                <source srcset="./images/barbers/photo-ab-desktop.jpg 1x, ./images/barbers/photo-ab-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" sizes="(min-width: 370px) 370px">
+                <source srcset="./images/barbers/photo-ab-tablet.jpg 1x, ./images/barbers/photo-ab-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" sizes="(min-width: 450px) 450px">
+                <source srcset="./images/barbers/photo-ab-mobile.jpg 1x, ./images/barbers/photo-ab-mobile@2x.jpg 2x"
+                media="(min-width: 480px)" sizes="(min-width: 418px) 418px">
+                <img
+                  class="our-barberies__photo"
+                  alt="Zdjęcie Alana Blacka"
+                  src="./images/barbers/photo-ab-mobile.jpg"
+                />
+              </picture>
               <div class="our-barberies__info">
                 <h3 class="our-barberies__name">Alan Black</h3>
-                <p class="our_barberies__job">Extreme Barber</p>
+                <p class="our-barberies__job">Extreme Barber</p>
                 <ul class="social-list list--non-bulleted">
                   <li class="social-list-item">
                     <a class="social-list__link" href="#">
@@ -381,7 +402,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- PORTFOLIO -->
       <!-- <section class="portfolio section">
