@@ -1,7 +1,9 @@
 .why-us {
   & .container {
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
   }
 
