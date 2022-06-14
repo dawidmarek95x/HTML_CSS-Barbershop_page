@@ -1,12 +1,10 @@
 .contacts {
-  display: flex;
   background-color: $bgColorContacts;
+}
 
-  & .container {
+@media screen and (min-width: 1200px) {
+  .contacts {
     display: flex;
-  }
-  
-  & .secondary-header {
-    margin-bottom: 40px;
+    justify-content: center;
   }
 }

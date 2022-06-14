@@ -1004,88 +1004,67 @@ img {
 }
 
 .contacts {
-  display: flex;
   background-color: #191c26;
 }
 
-.contacts .container {
-  display: flex;
-}
-
-.contacts .secondary-header {
-  margin-bottom: 40px;
-}
-
-.contacts-form__section {
-  width: 50%;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contacts-form {
-  width: 560px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contacts-form__section .secondary-header {
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.contacts-form .contacts-form__input, .contacts-form .contacts-form__message {
+  margin-bottom: 44px;
+  border: none;
+  border-bottom: 1px solid #9da4bd66;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  transition: all 250ms linear;
+}
+
+.contacts-form .contacts-form__input:focus, .contacts-form .contacts-form__message:focus {
+  font-size: 14px;
+  line-height: 1.714;
+  border-color: #fff;
+}
+
+.contacts-form .contacts-form__input::placeholder, .contacts-form .contacts-form__message::placeholder {
+  text-transform: uppercase;
+  color: #9da4bd66;
+  transition: color 250ms linear;
+}
+
+.contacts-form .contacts-form__input:focus::placeholder, .contacts-form .contacts-form__message:focus::placeholder {
+  color: #e7e4e4;
 }
 
 .contacts-form__input {
-  width: 270px;
-  height: 24px;
-  margin-bottom: 44px;
-  border: none;
-  border-bottom: 1px solid #9da4bd66;
-  font-size: 11px;
-  font-weight: 600;
-  color: #fff;
-  background-color: transparent;
-  outline: none;
-  transition: all 250ms linear;
-}
-
-.contacts-form__input:focus {
-  border-color: #fff;
-}
-
-.contacts-form__input::placeholder {
-  text-transform: uppercase;
-  color: #9da4bd66;
-  transition: color 250ms linear;
-}
-
-.contacts-form__input:focus::placeholder {
-  color: #fff;
+  line-height: 2.182;
 }
 
 .contacts-form__message {
-  width: 100%;
   height: 76px;
-  margin-bottom: 44px;
-  border: none;
-  border-bottom: 1px solid #9da4bd66;
-  font-size: 11px;
-  font-weight: 600;
-  color: #fff;
-  background-color: transparent;
   resize: none;
-  transition: all 250ms linear;
-}
-
-.contacts-form__message:focus {
-  outline: none;
-  border-color: #fff;
-}
-
-.contacts-form__message::placeholder {
-  text-transform: uppercase;
-  color: #9da4bd66;
-  transition: color 250ms linear;
-}
-
-.contacts-form__message:focus::placeholder {
-  color: #fff;
 }
 
 .contacts-form__btn {
-  min-width: 160px;
+  display: block;
+  width: 160px;
+  margin: 0 auto;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   padding: 12px 10px;
@@ -1104,9 +1083,51 @@ img {
   background-color: #ff6c00;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contacts-form__section .secondary-header {
+    text-align: left;
+  }
+  .contacts-form__input {
+    width: 330px;
+  }
+  .contacts-form__message {
+    width: 100%;
+  }
+  .contacts-form__btn {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-form__section {
+    width: 50%;
+  }
+  .contacts-form__section .container {
+    width: 615px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 40px;
+  }
+  .contacts-form__input {
+    width: 265px;
+  }
+}
+
 .contacts__info {
-  width: 50%;
-  padding-left: 100px;
+  background-image: url("../images/contacts/contact-info-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.contacts__info .secondary-header {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .contacts__info .undertitle {
@@ -1114,27 +1135,84 @@ img {
 }
 
 .contacts__info .address {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
 }
 
 .contacts__hours {
+  margin: 0;
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
 
-.address__item:not(:first-child) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .contacts__info {
+    background-image: url("../images/contacts/contact-info-bg-mobile@2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__info {
+    background-image: url("../images/contacts/contact-info-bg-tablet.png");
+  }
+  .contacts__info .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contacts__info .secondary-header {
+    width: 100%;
+    text-align: left;
+  }
+  .contacts__info .address {
+    width: 330px;
+    margin-bottom: 0;
+  }
+  .contacts__info .contacts__openly {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .contacts__info {
+    background-image: url("../images/contacts/contact-info-bg-tablet@2x.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__info {
+    width: 50%;
+    background-image: url("../images/contacts/contact-info-bg-desktop.png");
+  }
+  .contacts__info .container {
+    width: 585px;
+    margin-right: auto;
+    margin-left: 0;
+    padding-left: 100px;
+  }
+  .contacts__info .address {
+    width: 270px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .contacts__info {
+    background-image: url("../images/contacts/contact-info-bg-desktop@2x.png");
+  }
+}
+
+.address__item {
   display: flex;
+}
+
+.address__item:not(:first-child) {
   align-items: center;
 }
 
 .address__item:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.address__item:first-child {
-  display: flex;
 }
 
 .address__item:first-child .address__link {

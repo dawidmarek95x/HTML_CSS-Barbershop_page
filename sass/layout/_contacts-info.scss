@@ -1,19 +1,96 @@
 .contacts__info {
-  width: 50%;
-  padding-left: 100px;
+  background-image: url("../images/contacts/contact-info-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  & .secondary-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 
   & .undertitle {
     color: $colorMainDarkTheme;
   }
   
   & .address {
-    margin-bottom: 70px;
+    margin-bottom: 44px;
   }
 }
 
 .contacts__hours {
+  margin: 0;
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
   color: $colorSecondaryDarkTheme;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 192dpi)  and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 2dppx)  and (min-width: 320px) and (max-width: 767px) {
+.contacts__info {
+  background-image: url("../images/contacts/contact-info-bg-mobile@2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__info {
+    background-image: url("../images/contacts/contact-info-bg-tablet.png");
+
+    & .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    & .secondary-header {
+      width: 100%;
+      text-align: left;
+    }
+    
+    & .address {
+      width: 330px;
+      margin-bottom: 0;
+    }
+
+    & .contacts__openly {
+      width: 330px;
+    }
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 192dpi)  and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 2dppx)  and (min-width: 320px) and (max-width: 767px) {
+  .contacts__info {
+    background-image: url("../images/contacts/contact-info-bg-tablet@2x.png");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__info {
+    width: 50%;
+    background-image: url("../images/contacts/contact-info-bg-desktop.png");
+
+    & .container {
+      width: 585px;
+      margin-right: auto;
+      margin-left: 0;
+      padding-left: 100px;
+    }
+    
+    & .address {
+      width: 270px;
+      margin-bottom: 70px;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 192dpi)  and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 2dppx)  and (min-width: 320px) and (max-width: 767px) {
+  .contacts__info {
+    background-image: url("../images/contacts/contact-info-bg-desktop@2x.png");
+    }
+  }
 }
