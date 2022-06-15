@@ -18,17 +18,17 @@
   }
   
   &__item {
-    width: 193px;
+    width: 140px;
     min-height: 133px;
     padding: 20px 32px;
     background-color: $bgColorAccentLight;
   
     &:nth-child(odd) {
-      margin-right: 30px;
+      margin-right: 10px;
     }
     
     &:nth-child(even) {
-      margin-top: 30px;
+      margin-top: 10px;
     }
   }
   
@@ -74,6 +74,103 @@
     }
   }
 }
+
+@media screen and (max-width: 479px) {
+  .why-us {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 450px) {
+    .why-us {
+      &__item {
+        width: 160px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .why-us {
+    & .container {
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      -ms-grid-rows: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+    }
+  
+    &__advantages {
+      grid-row: 2/3;
+    }
+    
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    
+    &__item {
+      width: 193px;
+      min-height: 133px;
+      padding: 20px 32px;
+      background-color: $bgColorAccentLight;
+    
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+      
+      &:nth-child(even) {
+        margin-top: 30px;
+      }
+    }
+    
+    &__counter {
+      position: relative;
+      width: max-content;
+      margin: 0 auto;
+      margin-bottom: 6px;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.357;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: $colorMainLightTheme;
+    
+      &::after {
+        position: absolute;
+        top: 12px;
+        right: -10px;
+        content: "";
+        background-image: url(../images/plus.svg);
+        width: 9px;
+        height: 9px;
+        fill: $colorAccent;
+      }
+    }
+    
+    &__text {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.364;
+      text-align: center;
+      color: $colorMainLightTheme;
+    }
+    
+    &__info {
+      grid-row: 1/2;
+      margin-bottom: 44px;
+  
+      & .description {
+        font-size: 18px;
+        line-height: 1.667;
+      }
+    }
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .why-us {

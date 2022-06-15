@@ -130,6 +130,15 @@
   background-position: center;
 }
 
+.modal__form-policy-link {
+  color: blue;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 .modal__form-btn {
   display: block;
   width: 200px;
@@ -152,5 +161,21 @@
   &:focus {
     color: $colorMainDarkTheme;
     background-color: $colorAccent;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+
+  .modal__form-header {
+    line-height: 1.15;
   }
 }
