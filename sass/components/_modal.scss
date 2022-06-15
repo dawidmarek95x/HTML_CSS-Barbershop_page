@@ -2,7 +2,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   padding: 40px;
   background-color: $bgColorModal;
@@ -161,6 +161,12 @@
   &:focus {
     color: $colorMainDarkTheme;
     background-color: $colorAccent;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 470px;
   }
 }
 
