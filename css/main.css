@@ -301,6 +301,110 @@ img {
   }
 }
 
+.mobile-menu {
+  position: relative;
+  max-width: 337px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  padding: 118px 0 0 40px;
+  background-color: #fff;
+}
+
+.mobile-menu--backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000033;
+  transform: translateX(0);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 998;
+}
+
+.mobile-menu--is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mobile-menu__close-btn:hover .cross-icon, .mobile-menu__close-btn:focus .cross-icon {
+  fill: #ff6c00;
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu .address {
+  margin-bottom: 24px;
+}
+
+.mobile-menu .address__phone-number, .mobile-menu .mobile-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.389;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+
+.mobile-menu .address__phone-number:hover, .mobile-menu .mobile-nav__link:hover, .mobile-menu .address__phone-number:focus, .mobile-menu .mobile-nav__link:focus {
+  color: #ff6c00;
+}
+
+.mobile-menu .modal-btn {
+  width: 194px;
+}
+
+.mobile-menu .social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu .social-links__item:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 24px;
+}
+
+.mobile-menu .social-links__item:not(:first-child) {
+  padding-left: 100px;
+}
+
+.mobile-menu .social-links__link {
+  font-size: 14px;
+  line-height: 1.357;
+}
+
+.mobile-nav__list {
+  margin-bottom: 64px;
+}
+
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.cross-icon {
+  width: 18px;
+  height: 18px;
+  fill: #000;
+}
+
 .navigation {
   display: flex;
 }
@@ -627,7 +731,7 @@ img {
   .header__contacts .modal-btn {
     grid-row: 1/2;
   }
-  .address__phone-number {
+  .address__phone-number, .mobile-nav__link {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.362;
@@ -635,7 +739,7 @@ img {
     color: #ffffff;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
-  .address__phone-number:hover, .address__phone-number:focus {
+  .address__phone-number:hover, .mobile-nav__link:hover, .address__phone-number:focus, .mobile-nav__link:focus {
     color: #ff6c00;
   }
 }

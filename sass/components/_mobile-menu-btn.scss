@@ -1,0 +1,27 @@
+.mobile-menu__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover .mobile-menu__icon,
+  &:focus .mobile-menu__icon{
+    fill: $colorAccent;
+  }
+}
+
+.mobile-menu__icon {
+  width: 24px;
+  height: 16px;
+  fill: $colorMainDarkTheme;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}

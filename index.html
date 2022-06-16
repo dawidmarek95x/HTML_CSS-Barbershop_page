@@ -51,13 +51,55 @@
           </address>
           <button class="modal-btn modal-btn--dark-theme" type="button" data-modal-open>REJESTRACJA ONLINE</button>
         </div>
-        <button type="button" class="mobile-menu__btn">
+        <button type="button" class="mobile-menu__btn" mobile-menu--open>
           <svg class="mobile-menu__icon" width="24" height="16">
             <use href="images/sprite.svg#icon-mobile-menu"></use>
           </svg>
         </button>
       </div>
     </header>
+
+     <!-- MOBILE MENU WINDOW -->
+     <div class="mobile-menu--backdrop mobile-menu--is-hidden" mobile-menu>
+      <div class="mobile-menu">
+        <button class="mobile-menu__close-btn" type="button" mobile-menu--close>
+          <svg class="cross-icon">
+            <use href="./images/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list--non-bulleted">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link--non-decorated" href="#about-us">O nas</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link--non-decorated" href="#services">Usługi i ceny</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link--non-decorated" href="#barbers">Barberzy</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link--non-decorated" href="#contacts">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contacts">
+          <address class="address">
+            <a class="address__phone-number link--non-decorated" href="tel:+48111111111"
+              >+48 111 111 111</a>
+          </address>
+          <button class="modal-btn modal-btn--light-theme" type="button" data-modal-open>REJESTRACJA ONLINE</button>
+        </div>
+        <ul class="social-links list--non-bulleted">
+          <li class="social-links__item">
+            <a class="social-links__link link--non-decorated" href="#">Instagram</a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link link--non-decorated" href="#">YouTube</a>
+          </li>
+        </ul>
+      </div>
+     </div>
 
     <main class="main">
       <!-- HERO -->
@@ -549,7 +591,7 @@
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn__icon">
-            <use href="images/sprite.svg#icon-close-btn"></use>
+            <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
         <h2 class="modal__form-header">Rezerwacja online</h2>
@@ -588,5 +630,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
