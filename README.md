@@ -2,4 +2,4 @@
 
  HTML & CSS Practice - BarberShop Page
 
-https://dawidmarek95x.github.io/barbershop-training-page/
+https://dawidmarek95x.github.io/HTML_CSS-Barbershop_page/
