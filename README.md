@@ -11,4 +11,4 @@ Website layout design for a barber shop in an adaptive version.
 
 **Criteria:**
 
-[Project acceptance criteria](https://github.com/goitacademy/html-css-homework/blob/master/8-responsive/README.en.md)
+[Project acceptance criteria](https://github.com/dawidmarek95x/HTML_CSS-Barbershop_page/blob/main/Criteria.md)
